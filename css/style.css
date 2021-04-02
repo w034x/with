@@ -1,0 +1,315 @@
+ * {
+    margin: 0;  /* Обнуляем все отступы */
+    padding: 0;  /* Обнуляем все отступы */
+    box-sizing: border-box;  /* Изменяем алгоритм расчета ширины блоков */
+}
+
+header {
+    background: linear-gradient(to right, #0483c8, #2ab45d , #ef9e05); /* Задаём фон для шапки */
+}
+
+.container {
+    max-width: 1170px;  /* Максимальная ширина основного контента */
+    width: 1170px; /* Ширина основного контента */
+    margin: 0 auto; /* Выравниваем контейнер по центру */
+}
+
+
+.header-title ul {
+    list-style: none; /* Убирем маркеры списка */
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase; /* Делаем все буквы в верхнем регистре */
+    font-weight: bold;
+    text-align: center;
+    font-family: 'PNBold' , sans-serif; /* Меняем шрифт текста */
+}
+
+.circle {
+    margin: 0 !important;
+}
+
+.header-title ul li {
+    display: inline-block; /* Выстраиваем элементы списка в строку */
+    margin: 35px 15px 15px 15px;
+}
+
+.header-title-bottom {
+    font-size: 23px;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 30px;
+    font-family: 'OldStandardTT-italic', sans-serif; /* Меняем шрифт текста */
+}
+
+.nav-flex {
+    display: flex; /* Включаем систему компоновки элементов flex-box */
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 20px 0;
+}
+
+.nav-flex a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-right: 35px;
+    font-family: 'PNBold', sans-serif;
+}
+.nav-flex-list {
+	margin: 0 auto;
+}
+.banner-img {
+    margin-top: 20px;
+}
+main .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    max-width: 770px;
+    width: 770px;
+}
+
+.sidebar {
+    max-width: 370px;
+    width: 370px;
+}
+
+.breadcrumb {
+    font-family: 'PNRegular', sans-serif;
+    color: #909090;
+    font-size: 14px;
+    list-style: none;
+    display: flex;
+    margin: 17px 0 23px 0;
+}
+
+.breadcrumb li {
+    margin-right: 10px;
+}
+
+.breadcrumb li img {
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 35px;
+    font-family: 'PNBold' sans-serif;
+    margin-bottom: 27px;
+}
+
+p {
+    font-size: 17px;
+    font-family: 'PNRegular' sans-serif;
+    margin-bottom: 25px;
+}
+
+a {
+    color: #0072ff;
+    text-decoration: none;
+    font-family: 'PNRegular' sans-serif;
+}
+.borrowing {
+    display: flex;
+    border: 1px solid #eeeeee;
+    margin-bottom: 25px;
+}
+
+.information {
+    display: flex;
+    justify-content: space-around;
+    width: calc(100% - 160px); 
+}
+
+.logotype {
+    width: 160px;
+    border-right: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-title {
+    color: #909090;
+    font-size: 14px;
+    font-family: 'PNRegular', sans-serif;
+    margin: 25px 0 15px 0;
+}
+
+.bet {
+    font-size: 35px;
+    color: #49ae00;
+    font-family: 'PNBold', sans-serif;
+}
+
+.amount {
+    font-family: 'PNRegular',sans-serif;
+    font-size: 17px;
+}
+
+.amount span {
+    display: inline-block;
+}
+
+.date {
+    font-family: 'PNRegular', sans-serif;
+    font-size: 17px;
+}
+
+.money-btn {
+    width: 140px;
+    background: #49ae00;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding: 12px 20px;
+    font-family: 'PNBold', sans-serif;
+}
+
+.more {
+    display: block;
+    font-family: 'PNRegular', sans-serif;
+    color: #909090;
+    font-size: 14px;
+    margin: 14px 20px;
+}
+.get-money {
+    margin-top: 20px;
+}
+
+.get-money img {
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.borrowing {
+    transition: 0.2s ease all; 
+}
+
+.borrowing:hover {
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+    transition: 0.2s ease all;
+}
+h2 {
+    font-size: 25px;
+    font-family: 'PNBold', sans-serif;
+    margin-bottom: 25px;
+}
+
+.accordion-block {
+    font-size: 25px;
+    font-family: 'PNBold', sans-serif;
+    color: #117bff;
+    position: relative; 
+    padding: 0px 0 30px 20px;
+    margin-top: 30px;
+}
+
+.accordion-block:nth-child(1),
+.accordion-block:nth-child(2) {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-block:before {
+    position: absolute; 
+    content: ''; 
+    background: url('../img/accordion-arrow.png');
+    width: 7px;
+    height: 4px;
+    left: 0; 
+    top: 12px; 
+}
+
+.content {
+    border-bottom: 1px solid #ddd;
+}
+.rating {
+    margin-top: 30px;
+    border: 22px solid #ebebeb;
+    padding: 25px 30px 5px 30px;
+}
+
+.rating ol {
+    list-style: none;
+}
+
+.rating ol li {
+    margin: 20px 0;
+}
+
+.rating h2 {
+    margin-bottom: 20px;
+}
+
+.num {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%; /* Скругляем углы */
+    display: inline-block;
+    text-align: center;
+    line-height: 25px;
+    font-family: 'PNRegular', sans-serif;
+    font-size: 17px;
+}
+
+.num-first {
+    border: 2px solid #ffdf08;
+}
+
+.num-second {
+    border: 2px solid #cecece;
+}
+
+.num-third {
+    border: 2px solid #dca87b;
+}
+
+.change-rating {
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+}
+
+.rating a {
+    font-family: 'PNRegular', sans-serif;
+}
+.sidebar-img {
+    margin-top: 30px;
+}
+.bottom-nav h2 {
+    margin: 0;
+}
+
+.bottom-nav-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 200px 55px 0;
+}
+
+.bottom-nav-top ul {
+    list-style: none;
+}
+
+.bottom-nav ul li {
+    margin: 9px 0;
+}
+footer {
+    background: #f1f1f1;
+}
+
+.footer-nav {
+    display: flex;
+
+
+}
+
+.footer-nav a {
+    color: #a7a7a7;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 40px 40px 40px 0;
+}
